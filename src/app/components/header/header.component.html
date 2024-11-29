@@ -1,0 +1,91 @@
+<header class="o-header navbar" role="banner">
+  <a href="#main" class="skip-to-main-content-link">
+    Saltar al contenido principal
+  </a>
+  <div class="container header-container">
+    <a [routerLink]="''" class="navbar-brand">
+      <img
+        class="d-none d-xl-block"
+        src="./../assets/header/logo_obelisco.svg"
+        alt="Obelisco"
+      />
+      <img
+        class="d-xl-none"
+        src="./../assets/header/logo_obelisco_mobile.svg"
+        alt="Obelisco"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarHomeObelisco"
+      aria-controls="navbarHomeObelisco"
+      aria-expanded="false"
+      aria-label="Menú"
+    ></button>
+    <div class="collapse navbar-collapse" id="navbarHomeObelisco">
+      <div class="navbar-content">
+        <div class="navbar-sections">
+          <nav>
+            <p class="navbar-sections-title">Secciones</p>
+            <ul class="nav nav-pills nav-sections">
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-link-lg"
+                  href="https://gcba.github.io/Obelisco-V2/getting-started"
+                  ><span>Empezar con Obelisco</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-link-lg"
+                  href="https://gcba.github.io/Obelisco-V2/components"
+                  ><span>Librería</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-link-lg"
+                  href="https://gcba.github.io/obelisco-demo/index.html"
+                  ><span>Plantillas</span></a
+                >
+              </li>
+              <li class="dropdown">
+                <button
+                  type="button"
+                  class="btn btn-dropdown btn-lg"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span class="btn-dropdown-text ellipsis-1">Versiones</span>
+                  <span
+                    class="material-symbols-rounded btn-dropdown-icon"
+                    aria-label="hidden"
+                  >
+                    expand_more
+                  </span>
+                </button>
+                <div class="dropdown-menu">
+                  <a
+                    class="dropdown-item"
+                    href="https://gcba.github.io/Obelisco-V2/documentation"
+                  >
+                    <span class="item-text">Obelisco v.2</span>
+                  </a>
+                  <a class="dropdown-item" routerLink="/obelisco-v1">
+                    <span class="item-text"
+                      >Obelisco v.1
+                      <span class="fst-italic">(deprecado)</span></span
+                    >
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-backdrop"></div>
+</header>
